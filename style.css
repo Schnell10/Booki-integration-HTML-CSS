@@ -86,6 +86,59 @@ nav {
     margin-right: 42px;
 }
 
+/******First Section ****/
+.info-group {
+    width: 1340px;
+    height: 281px
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h1 + p {
+    font-size: 16px;
+}
+
+.form1 {
+    display: flex;
+}
+.map {
+    background-color: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    border: none;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#button {
+    background-color: #0065FC;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 132px;
+    height: 49px;
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;

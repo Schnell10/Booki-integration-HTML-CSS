@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <!-- Modification de la police déjà présente (ligne 10 11 12) sur la base de code par la même police mais
-     en 400/600/700 weight au lieude 400/500/700 weight déjà demandé -->
+     en 400/600/700 weight au lieu de 400/500/700 weight déjà demandé -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,6 +27,26 @@
             </nav>
         </header>
         <main>
+            <section class="info-group">
+                <div classe="projet-title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div>
+                    <form method="get" action=""> <!-- mise en place du html du formulaire-->
+                        <div class="form1">
+                          <div class="map">
+                            <label class="map" for="search"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></label>
+                          </div>
+                            <input type="text" name="search" id="search" value="Marseille, France">
+                            <input type="submit" value="Rechercher" id="button">
+                        </div>
+                    </form>
+                </div>
+                <div class="filter">
+                    
+                </div>
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
