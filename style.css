@@ -3,6 +3,11 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    margin: 0;    /* on enleve les marges par défauts du body */
+    padding:0;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -53,10 +58,38 @@ body {
     color: var(--main-bg-color)
 }
 
+/***** Header *****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* on sépare les 2 bloque du header (logo et le nav) */
+}
+
+#logo {
+    width: 61px;
+    Height: 19px;
+    margin: 30px 0 0 30px;
+}
+nav a {
+    margin: 20px;
+    text-decoration: none; /* supprime le soulignement par défaut des lien */
+}
+
+nav a:hover {
+    border-top: 2px #0065FC solid;
+    padding-top: 14px;
+}
+
+nav {
+    margin-top: 16px;
+    margin-right: 42px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .hebergements-and-populaires section {
