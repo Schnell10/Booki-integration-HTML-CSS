@@ -89,7 +89,8 @@ nav {
 /******First Section ****/
 .info-group {
     width: 1340px;
-    height: 281px
+    height: 281px;
+    margin: 60px 50px 37.5px 50px; 
 }
 
 h1 {
@@ -98,8 +99,11 @@ h1 {
 
 h1 + p {
     font-size: 16px;
+    margin-top: 0px;
 }
 
+
+/**** form ***/
 .form1 {
     display: flex;
 }
@@ -123,6 +127,9 @@ h1 + p {
     font-weight: bold;
     font-size: 18px;
 }
+#search:active {     /** ne marche pas **/
+    border: none;
+}
 
 #button {
     background-color: #0065FC;
@@ -137,6 +144,52 @@ h1 + p {
 }
 
 
+/*****  Filtre *****/
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.filter i {
+    margin-right: 10px;
+}
+
+.filter h2 {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.box {
+    border: 2px #D9D9D9 solid;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 17 px;
+
+}
+
+.box:hover {
+    background-color: #DEEBFF;
+}
+
+
+.conteneur {
+    display: grid;
+    grid-template-columns: 173px 173px 173px 173px 173px;
+    height: 50px;
+    gap: 10px;
+  }
+
+/**** 500 logement ****/
+.logement {
+    display: flex;
+
+}
 
 
 /****** Hebergements And Populaires ***********/
