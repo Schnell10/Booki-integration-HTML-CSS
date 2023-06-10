@@ -20,7 +20,7 @@
 <body>   
     <div class="main-container">
         <header>
-            <img src="images/logo/Booki.png" alt="logo Booki" id="logo">
+            <a href="#"><img src="images/logo/Booki.png" alt="logo Booki" id="logo"></a>
             <nav>
                 <a href="hébergements_marseille"> Hébergements</a>
                 <a href="activités_marseille"> Activités</a>
@@ -36,23 +36,25 @@
                     <form method="get" action=""> <!-- mise en place du html pour le formulaire-->
                         <div class="form1">
                           <div class="map">
-                            <label class="map" for="search"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></label>
+                            <label for="search"><i class="fa-solid fa-location-dot"></i></label>
                           </div>
-                            <input type="text" name="search" id="search" value="Marseille, France">
+                            <input type="text" name="search" id="search" placeholder="Marseille, France">
                             <input type="submit" value="Rechercher" id="button">
                         </div>
                     </form>
                 </div>
                 <div class="filter">
                 <h2>Filtres</h2>
-                <div class="conteneur">
-                    <div class="box"> <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i> Économique </div>
-                    <div class="box"> <i class="fa-solid fa-person" style="color: #0065fc;"></i> Familial </div>
-                    <div class="box"> <i class="fa-solid fa-heart" style="color: #0065fc;"></i> Romantique </div>
-                    <div class="box"> <i class="fa-solid fa-fire" style="color: #0065fc;"></i> Nos pépites </div>
+                    <div class="conteneur">
+                       <div class="box"> <i class="fa-solid fa-money-bill-wave"></i> Économique </div>
+                       <div class="box"> <i class="fa-solid fa-person"></i> Familial </div>
+                       <div class="box"> <i class="fa-solid fa-heart"></i> Romantique </div>
+                       <div class="box"> <i class="fa-solid fa-fire"></i> Nos pépites </div>
+                    </div>
                 </div>
-                <p class="logements"><i class="fa-solid fa-info" style="color: #0065fc;"></i>
-                Plus de 500 logements sont disponible dans cette ville</p>
+                <div class="logements"><i class="fa-solid fa-info"></i>
+                Plus de 500 logements sont disponible dans cette ville
+                </div>
             </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
