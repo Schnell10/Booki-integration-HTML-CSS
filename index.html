@@ -32,8 +32,7 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div>
-                    <form method="get" action=""> <!-- mise en place du html pour le formulaire-->
+                <form method="get" action=""> <!-- mise en place du html pour le formulaire-->
                         <div class="form1">
                           <div class="map">
                             <label for="search"><i class="fa-solid fa-location-dot"></i></label>
@@ -41,19 +40,21 @@
                             <input type="text" name="search" id="search" placeholder="Marseille, France">
                             <input type="submit" value="Rechercher" id="button">
                         </div>
-                    </form>
-                </div>
+                </form>
                 <div class="filter">
-                <h2>Filtres</h2>
+                    <h2>Filtres</h2>
                     <div class="conteneur">
-                       <div class="box"> <i class="fa-solid fa-money-bill-wave"></i> Économique </div>
-                       <div class="box"> <i class="fa-solid fa-person"></i> Familial </div>
-                       <div class="box"> <i class="fa-solid fa-heart"></i> Romantique </div>
-                       <div class="box"> <i class="fa-solid fa-fire"></i> Nos pépites </div>
+                       <div class="box"> <i class="fa-solid fa-money-bill-wave"></i><p>Économique</p> </div>
+                       <div class="box"> <i class="fa-solid fa-person"></i><p>Familial</p> </div>
+                       <div class="box"> <i class="fa-solid fa-heart"></i><p>Romantique</p> </div>
+                       <div class="box"> <i class="fa-solid fa-fire"></i><p>Nos pépites</p> </div>
                     </div>
                 </div>
-                <div class="logements"><i class="fa-solid fa-info"></i>
-                Plus de 500 logements sont disponible dans cette ville
+                <div class="logements">
+                    <div class="cercle">
+                       <i class="fa-solid fa-info"></i>
+                    </div>
+                    <p> Plus de 500 logements sont disponible dans cette ville</p>
                 </div>
             </section>
             <div class="hebergements-and-populaires">
@@ -63,7 +64,7 @@
                     </div>
 
                     <div class="hebergements-cards">
-                        <div class="bloc-card">
+                        <div class="block-card">
                         <a href="#">
                         <article class="card">  
                             <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit"> 
@@ -84,7 +85,7 @@
                         </article>
                         </a>
                         </div>
-                        <div class="bloc-card">
+                        <div class="block-card">
                         <a href="#">
                             <article class="card">  
                                 <img src="images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit"> 
@@ -105,7 +106,7 @@
                             </article>
                         </a>
                         </div>
-                        <div class="bloc-card">
+                        <div class="block-card">
                         <a href="#">
                             <article class="card">  
                                 <img src="images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit"> 
@@ -126,7 +127,7 @@
                             </article>
                         </a> 
                         </div>
-                        <div class="bloc-card">
+                        <div class="block-card">
                         <a href="#">
                             <article class="card">  
                                 <img src="images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit"> 
@@ -147,7 +148,7 @@
                             </article>
                         </a>
                         </div>
-                        <div class="bloc-card">
+                        <div class="block-card">
                         <a href="#">
                             <article class="card">  
                                 <img src="images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit"> 
@@ -168,7 +169,7 @@
                             </article>
                         </a>
                         </div>
-                        <div class="bloc-card">
+                        <div class="block-card">
                         <a href="#">
                             <article class="card">  
                                 <img src="images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit"> 
@@ -267,34 +268,34 @@
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
                 <div class="activity-cards">
-                    <div class="bloc-activity">
+                    <div class="block-activity">
                     <a href="#">
                         <article class="card">
-                           <img src="images/activites/reno-laithienne.jpg">
+                           <img src="images/activites/reno-laithienne.jpg" alt="image du vieux-port">
                            <h3 class="card-title">Vieux-Port</h3>
                         </article>
                     </a>
                     </div>
-                    <div class="bloc-activity">
+                    <div class="block-activity">
                     <a href="#">
                         <article class="card">
-                           <img src="images/activites/paul-hermann.jpg">
+                           <img src="images/activites/paul-hermann.jpg" alt="image du fort de pomègues">
                            <h3 class="card-title">Fort de Pomègues</h3>
                         </article>
                     </a>
                     </div>
-                    <div class="bloc-activity">
+                    <div class="block-activity">
                     <a href="#">
                         <article class="card">
-                           <img src="images/activites/kilyan-sockalingum.jpg">
+                           <img src="images/activites/kilyan-sockalingum.jpg" alt="image des Calanques">
                            <h3 class="card-title">Parc national des Calanques</h3>
                         </article>
                     </a>
                     </div>
-                    <div class="bloc-activity">
+                    <div class="block-activity">
                     <a href="#">
                         <article class="card">
-                           <img src="images/activites/florian-wehde.jpg">
+                           <img src="images/activites/florian-wehde.jpg" alt="image de notre dame de la garde">
                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                         </article>
                     </a>
@@ -302,7 +303,30 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div>
+                <h4>À propos</h4>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions gènérales</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Nos hébergements</h4>
+                <ul>
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Assistance</h4>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 

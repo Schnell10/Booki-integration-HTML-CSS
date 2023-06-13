@@ -60,13 +60,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    height: 79px;
     /* on sépare les 2 bloque du header (logo et le nav) */
 }
 
 #logo {
     width: 61px;
     Height: 19px;
-    margin: 30px 0 0px 0;
+    margin: 30px 0 0px -20px;
 }
 nav a {
     text-decoration: none; /* supprime le soulignement par défaut des lien */
@@ -89,9 +90,11 @@ nav {
 
 /******First Section ****/
 .info-group {
-    width: 1340px;
-    height: 281px;
-    margin: 60px 0 37.5px 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 h1 {
@@ -101,13 +104,14 @@ h1 {
 
 h1 + p {
     font-size: 16px;
-    margin: 8px 0 35px 0;
+    margin-top: 8px;
 }
 
 
 /**** form ***/
 .form1 {
     display: flex;
+    width: 377px;
 }
 .map {
     background-color: var(--main-bg-color);
@@ -156,7 +160,6 @@ h1 + p {
 .filter {
     display: flex;
     align-items: center;
-    margin-top: 35px;
 }
 
 .filter i {
@@ -171,15 +174,15 @@ h1 + p {
 .box {
     border: 2px var(--filter-border-color) solid;
     border-radius: 25px;
-    padding: 4px 19px 4px 19px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 17 px;
-
 }
 
+.box p {
+    font-size: 17px;
+}
 .box:hover {
     background-color: var(--filter-bg-color);
 }
@@ -187,7 +190,7 @@ h1 + p {
 
 .conteneur {
     display: grid;
-    grid-template-columns: 173px 173px 173px 173px 173px;
+    grid-template-columns: 173px 173px 173px 173px;
     height: 50px;
     gap: 10px;
   }
@@ -195,18 +198,30 @@ h1 + p {
 /**** 500 logement ****/
 .logements {
     display: flex;
-    margin-top: 37.5px;
 }
 
-.logements i {
+.cercle {
+    border: 1px var(--filter-border-color) solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
 }
 
+.logements p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -223,8 +238,11 @@ h1 + p {
 .card {
     background-color: var(--white-color);
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.hebergements-and-populaires .cards {
+    padding: 5px;
 }
 
 .card img {
@@ -245,12 +263,12 @@ h1 + p {
     gap: 30px;
     }
 
-.bloc-card {
+.block-card {
     flex: 1 0 30%;  /** flex-grow flex-shrink flex-basis **/
 }
 
 .hebergements h2 {
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .hebergements h3 {
@@ -263,8 +281,8 @@ h1 + p {
 }
 
 .hebergements .card-content {
-    margin-left: 10px;
-    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .hebergements p {
@@ -278,7 +296,7 @@ h1 + p {
     border-top-right-radius: 20px;
 }
 
-.bloc-card:hover {   /*** fonctionne mal ***/
+.block-card:hover {   /*** fonctionne mal ***/
     flex: 1 0 32%;
 }
 
@@ -330,7 +348,9 @@ h1 + p {
 
 /**** activités à marseille *****/
 .activity {
-    margin: 65px 30px 65px 30px; 
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .activity a {
@@ -345,7 +365,7 @@ h1 + p {
     border-top-right-radius: 20px;
 }
 
-.bloc-activity {
+.block-activity {
     flex: 1 0 22%;
 }
 
@@ -356,9 +376,37 @@ h1 + p {
 }
 
 .activity-cards h3 {
-    margin: 20px 19px 20px 19px;
+    padding: 20px 19px 20px 19px;
 }
 
+
+/***** Footer *****/
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+}
+
+footer div {
+    width: 100%;
+    padding: 20px 0 0 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+li {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+footer div {
+    
+}
+
+ul {
+    list-style: none;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
