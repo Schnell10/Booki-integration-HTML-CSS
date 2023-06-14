@@ -125,6 +125,10 @@ h1+p {
     width: 377px;
 }
 
+.map:hover, #search:hover, #button:hover, .button-two:hover {
+     cursor: pointer;  
+}
+
 .map {
     background-color: var(--main-bg-color);
     border: 1px var(--main-bg-color) solid;
@@ -149,6 +153,7 @@ h1+p {
     font-weight: bold;
     font-size: 18px;
     color: black; /** ne marche pas**/
+    width: 100%
 }
 
 #search:active {
@@ -217,12 +222,16 @@ h1+p {
 
 .box:hover {
     background-color: var(--filter-bg-color);
+    cursor: pointer;
 }
-
 
 .conteneur {
     display: flex;
-    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.second-filter, .first-filter {
+    display: flex;
     gap: 15px;
 }
 
@@ -258,7 +267,6 @@ h1+p {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
 }
 
 .hebergements-and-populaires a {
@@ -288,7 +296,6 @@ h1+p {
 }
 
 .card:hover {
-    /*** fonctionne mal ***/
     transform: scale(1.05);
 }
 
@@ -296,6 +303,7 @@ h1+p {
 /****** Hebergements ***********/
 #hebergements {
     width: 65%;
+    padding: 30px;
 
 }
 
@@ -346,6 +354,7 @@ h1+p {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    padding: 30px;
 
 }
 
@@ -361,9 +370,7 @@ h1+p {
     transition: 0.5s;
 }
 
-.populaires-cards .card:hover {
-    transform: scale(1.05);
-}
+
 
 .populaires-cards img {
     width: 33%;
@@ -603,7 +610,17 @@ ul {
     }
     /**filtre**/ 
     .conteneur {
-        gap: 20px 10px;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .second-filter, .first-filter {
+        gap: 10px;
+    }
+
+    .box {
+        width: 50%;
     }
 
     /**button**/
@@ -614,9 +631,104 @@ ul {
 
     .button-two {
         display: block;
+        width: 30%;
     }
 
     .form1 {
         width: 100%;
     }
+
+    
+
+    .map {
+        width: 30%;
+    }
+
+    /** populaire et hebergement **/
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+
+    #hebergements {
+        background-color: transparent;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        margin-top: 15;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .block-populaires {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .hebergements-cards {
+        gap: 15px;
+    }
+
+    #hebergements .card {
+        flex: 1 0 100%;
+    }
+
+    #hebergements h2 {
+        margin-bottom: 0;
+    }
+    
+    #hebergements .show-more {
+        margin-top: 0;
+    }
+    
+    /** Activity **/
+
+    #activity {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .activity-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .activity-cards img {
+        height: 141px;
+    }
+
+    /** footer **/
+
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 81.33px 30px 30px;
+        margin: 0;
+    }
+
+    footer div {
+        padding: 0;
+    }
+
 }
