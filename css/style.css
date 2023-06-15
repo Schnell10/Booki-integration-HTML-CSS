@@ -1,6 +1,10 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /** comprime les padding/magin plutot que de les aditionner**/
 }
 
 body {
@@ -9,12 +13,7 @@ body {
     padding: 0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /** comprime les padding/magin plutot que de les aditionner**/
-}
+    
 
 
 :root {
@@ -511,6 +510,7 @@ ul {
 
     .hebergements-and-populaires {
         flex-direction: column;
+        gap: 50px;
     }
 
     #hebergements {
@@ -527,7 +527,6 @@ ul {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -675,7 +674,6 @@ ul {
         display: flex;
         flex-direction: column;
         padding: 30px 20px;
-        margin-top: 15;
     }
 
     .populaires-cards {
