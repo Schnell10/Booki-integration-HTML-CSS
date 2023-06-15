@@ -125,8 +125,12 @@ h1+p {
     width: 377px;
 }
 
-.map:hover, #search:hover, #button:hover, .button-two:hover {
-     cursor: pointer;  
+.map:hover,
+#search:hover,
+#button:hover,
+.button-two:hover,
+.map i:hover {
+    cursor: pointer;
 }
 
 .map {
@@ -152,7 +156,8 @@ h1+p {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    color: black; /** ne marche pas**/
+    color: black;
+    /** ne marche pas**/
     width: 100%
 }
 
@@ -230,7 +235,8 @@ h1+p {
     gap: 15px;
 }
 
-.second-filter, .first-filter {
+.second-filter,
+.first-filter {
     display: flex;
     gap: 15px;
 }
@@ -422,8 +428,7 @@ h1+p {
 }
 
 #activity .card {
-    flex: 1 0 22%;
-    
+    width: 25%;
 }
 
 .activity-cards {
@@ -559,7 +564,7 @@ ul {
     }
 
 
-    /* media queries phones header*/
+    /*  header*/
 
     header {
         flex-direction: column;
@@ -604,18 +609,21 @@ ul {
         padding-top: 0;
         border-bottom: 2px var(--main-color) solid;
     }
+
     /** infogroup **/
     .info-group {
         padding: 0 20px 0 20px;
     }
-    /**filtre**/ 
+
+    /**filtre**/
     .conteneur {
         gap: 20px;
         flex-direction: column;
         width: 100%;
     }
 
-    .second-filter, .first-filter {
+    .second-filter,
+    .first-filter {
         gap: 10px;
     }
 
@@ -638,7 +646,7 @@ ul {
         width: 100%;
     }
 
-    
+
 
     .map {
         width: 30%;
@@ -657,6 +665,10 @@ ul {
 
     #hebergements {
         background-color: transparent;
+    }
+
+    .img-hebergements-2 {
+        order: 6;
     }
 
     .populaires {
@@ -696,17 +708,21 @@ ul {
     #hebergements h2 {
         margin-bottom: 0;
     }
-    
+
     #hebergements .show-more {
         margin-top: 0;
     }
-    
+
     /** Activity **/
 
     #activity {
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+
+    #activity .card {
+        width: 100%;
     }
 
     .activity-cards {
