@@ -470,6 +470,12 @@ ul {
     list-style: none;
 }
 
+/** Limit 320px **/
+
+body {
+    min-width: 320px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -481,6 +487,7 @@ ul {
         width: 1440px;
     }
 }
+
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -785,10 +792,3 @@ ul {
 
 }
 
-/* limit 320px */
-
-@media (max-width: 320px) {
-    body {
-        width: 320px;
-    }
-}
